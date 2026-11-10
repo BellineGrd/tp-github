@@ -26,6 +26,12 @@ This project is a lightweight command-line task tracker for organizing everyday 
 - **Dependencies:** Python standard library only
 - **Version control:** Git; GitHub can be configured as a remote repository
 
+## Project layout
+
+- `main.py` — interactive menu and user input.
+- `task_manager.py` — task operations, validation, and JSON persistence.
+- `test_task_manager.py` — automated tests for storage and task workflows.
+
 ## Requirements
 
 - Python 3.10 or later
@@ -61,7 +67,7 @@ python task_manager.py delete <task-id>
 
 The JSON file is created automatically and updated atomically to reduce the chance of losing data if a write is interrupted. Keep your task file backed up if you need to preserve your personal task list.
 
-## Tests
+## Running the tests
 
 Run the standard-library test suite from this folder:
 
